@@ -1,22 +1,14 @@
-from pages.demoqa import DemoQa
 from conftest import browser
+from pages.demoqa import DemoQA
 
 
-def test(browser):
-    demo_page = DemoQa(browser)
-    demo_page.visit()
-    demo_page.click_on_the_icon()
-    assert demo_page.equal_url()
-    assert demo_page.exist_icon()
+def test_icon_exist(browser):
+    demo_qa_page = DemoQA(browser)
+    demo_qa_page.visit()
+    assert demo_qa_page.icon.exist()
+    demo_qa_page.icon.click()
+    assert demo_qa_page.equal_url()
 
 
 
 
-# def test_visit(browser):
-#     browser.get("https://demoqa.com/")
-#     icon = browser.find_element(By.CSS_SELECTOR, "#app > header > a")
-#
-#     if icon is None:
-#         print("Элемент не найден")
-#     else:
-#         print("Элемент найден")
