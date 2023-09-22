@@ -49,5 +49,7 @@ class WebElement:
     def enter(self):
         self.find_element().send_keys(Keys.ENTER)
 
+    def tab(self):
+        self.find_element().send_keys(Keys.TAB)
 
 

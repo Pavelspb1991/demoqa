@@ -19,7 +19,8 @@ def test_login_from(browser):
     form_page.user_number.send_keys("9992223344")
     time.sleep(2)
     form_page.state.send_keys("NCR")
-    form_page.state.enter()
+    # form_page.state.enter() # для красоты  сделал таб и enter ,но можно и через два enter
+    form_page.state.tab()
     time.sleep(1)
     form_page.city.send_keys("Delhi")
     form_page.city.enter()
