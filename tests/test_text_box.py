@@ -14,4 +14,4 @@ def test_text_box(browser):
     assert text_box.current_address.exist()
     # assert text_box.user_name.get_text() == text_box.name_2.get_text()
     # assert text_box.current_address.get_text() == text_box.current_address.get_text()
-    # задачу с i* не понял как сравнивать ^ там с первом будет test,а внизу Name:test
+    # задачу с i* не понял как сравнивать ^ там в первом будет test,а внизу Name:test
