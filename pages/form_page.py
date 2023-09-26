@@ -19,6 +19,7 @@ class FormPage(BasePage):
         self.current_adress = WebElement(driver, "#currentAddress")
         self.state = WebElement(driver, "#react-select-3-input")
         self.city = WebElement(driver, "#react-select-4-input")
+        self.user_form = WebElement(driver, "#userForm")
 
 
 #state > div > div.css-1hwfws3 > div.css-1uccc91-singleValue

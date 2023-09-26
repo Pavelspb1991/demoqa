@@ -1,7 +1,7 @@
 from conftest import browser
 import time
 from pages.text_box import TextBox
-
+from components.components import WebElement
 
 def test_text_box(browser):
     text_box = TextBox(browser)
