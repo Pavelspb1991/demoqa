@@ -18,8 +18,8 @@ def test_login_from(browser):
     time.sleep(2)
     form_page.user_number.send_keys("9992223344")
     time.sleep(2)
-    form_page.state.send_keys("NCR")  # сделал через два enter,а можно было и через tab перекл. между city/state
-    form_page.state.enter()  # добавил метод enter - send_keys(Keys.ENTER) в Webelement
+    form_page.state.send_keys("NCR")
+    form_page.state.enter()  #
     time.sleep(1)  # время для себя добавил,чтобы было видно
     form_page.city.send_keys("Delhi")
     form_page.city.enter()
@@ -29,6 +29,7 @@ def test_login_from(browser):
     assert form_page.modal_dialog.exist()
     time.sleep(2)
     form_page.btn_close_modal.click_force()
+
 
 
 def test_city(browser):
