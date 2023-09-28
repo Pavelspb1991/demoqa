@@ -2,6 +2,7 @@ from conftest import browser
 from pages.webtables import Webtables
 import time
 
+
 def test_webtables(browser):
     webtables = Webtables(browser)
 
@@ -16,8 +17,8 @@ def test_webtables(browser):
 
     # тест-кейс
 
-    assert not webtables.next_button.click()
-    assert not webtables.previous_button.click()
+    webtables.next_button.click()  # тут не уверен,что проверка кликабельности правильная(просто для логики)
+    webtables.previous_button.click()  # тут не уверен,что проверка кликабельности правильная(можно assert not)
     assert webtables.next_button.get_dom_attribute("disabled")
     assert webtables.previous_button.get_dom_attribute("disabled")
 
