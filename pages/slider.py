@@ -8,6 +8,6 @@ class Slider(BasePage):
         super().__init__(driver, self.base_url)
 
         self.slider_value = WebElement(driver, "#sliderValue")
-        self.slider = WebElement(driver, "div.range-slider__tooltip__arrow")
+        self.slider = WebElement(driver, "#sliderContainer > div.col-9 > span > div > div.range-slider__tooltip__arrow")
         self.slider_long = WebElement(driver, "#sliderContainer > div.col-9 > span > input")
 
