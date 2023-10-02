@@ -17,8 +17,6 @@ def test_webtables(browser):
 
     # тест-кейс
 
-    webtables.next_button.click()  # тут не уверен,что проверка кликабельности правильная(просто для логики)
-    webtables.previous_button.click()  # тут не уверен,что проверка кликабельности правильная(можно assert not)
     assert webtables.next_button.get_dom_attribute("disabled")
     assert webtables.previous_button.get_dom_attribute("disabled")
 

@@ -27,4 +27,6 @@ class Webtables(BasePage):
         self.row_5_button = WebElement(driver, "#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.pagination-bottom > div > div.-center > span.select-wrap.-pageSizeOptions > select > option:nth-child(1)")
         self.total_pages = WebElement(driver, "div.-center > span.-pageInfo")
         self.input_number = WebElement(driver, " input[type=number]")
+        self.header_resize = WebElement(driver, "div > div.rt-th.rt-resizable-header")
 
+  # div > div.rt-th.rt-resizable-header

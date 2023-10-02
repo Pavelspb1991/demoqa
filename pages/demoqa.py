@@ -1,3 +1,5 @@
+import pytest
+
 from pages.base_page import BasePage
 from components.components import WebElement
 
@@ -10,8 +12,4 @@ class DemoQA(BasePage):
         self.icon = WebElement(driver, '#app > header > a')
         self.btn_elements = WebElement(driver, '#app > div > div > div.home-body > div > div:nth-child(1)')
         self.footer_text = WebElement(driver, '#app > footer >span')
-
-
-
-
-
+        self.h5 = WebElement(driver, "div > div.card-body > h5")
