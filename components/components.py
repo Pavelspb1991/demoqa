@@ -26,8 +26,6 @@ class WebElement:
         for i in range(x):
             self.find_element().click()
 
-
-
     def exist(self):
         try:
             self.find_element()
@@ -90,6 +88,3 @@ class WebElement:
 
     def check_css(self, style, value=''):
         return self.find_element().value_of_css_property(style) == value
-
-
-
